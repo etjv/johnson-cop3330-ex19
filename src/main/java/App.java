@@ -38,7 +38,7 @@ public class App {
     private static float getHeight(){
         System.out.print("Enter your height in inches: ");
         String x = in.nextLine();
-        if(!x.contains("[a-zA-Z]+")){
+        if(x.contains("[0-9]")){
             return Float.parseFloat(x.replace(" ",""));
         }
         else{
@@ -50,7 +50,7 @@ public class App {
     private static float getWeight(){
         System.out.print("Enter your weight in pounds: ");
         String x = in.nextLine();
-        if(!x.contains("[a-zA-Z]+")){
+        if(x.contains("[0-9]")){
             return Float.parseFloat(x.replace(" ",""));
         }
         else{
